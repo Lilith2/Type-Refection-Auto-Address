@@ -17,7 +17,7 @@ TRemoteObject custom type is used on remote process reads that are contained wit
 Seems like struct FVector wasn't cached somehow on the class read.
 HOWEVER...
 rootcomp.localCopy.RelativeLocation  is perfectly valid syntax when I tested while writing this, I didn't test a live read, just syntax & inheritence.
-
+```
 //problem code from what my notes said
 READ_CLASS_FROM_FIELD(privPawn, RootComponent, SDK::USceneComponent, rootcomp);
 if (rootcomp.remoteBase)
@@ -26,6 +26,7 @@ if (rootcomp.remoteBase)
     Vector3 enemyLocation = memory.ReadMemory<Vector3>(rootcomp.remoteBase + 0x128);
     //check example cpp file for rest of code
 }
+```
 
 ### files included:
 
