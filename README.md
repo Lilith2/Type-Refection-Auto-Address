@@ -1,5 +1,10 @@
 # Type-Refection-Auto-Address
 
+Read Entire classes from remote process into a local cache that reflects all fields and their definitions.
+![screenshot](deven_LfRwNInQLH.png)
+
+
+
 ### files included:
 
 "Macros; Remote Process Type Reflection with Auto Address.pdf" White paper of my code.
